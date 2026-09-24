@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-    # Cambiado a ubuntu-24.04 para evitar advertencias de migración a Ubuntu 26
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -21,14 +20,14 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # ❌ Se eliminó la línea "years: 2024" porque ya no es un parámetro válido
+          # Ajustamos los outputs para filtrar exactamente el rango de fechas del año 2024
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?from=2024-01-01&to=2024-12-31
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&from=2024-01-01&to=2024-12-31
 
       - name: Push to output branch
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@://github.com"
           git config --global user.name "github-actions[bot]"
           
           # Create or checkout output branch
@@ -39,7 +38,7 @@ jobs:
           git add dist/
           
           # Commit if there are changes
-          git diff --cached --quiet || git commit -m "Generate snake animation"
+          git diff --cached --quiet || git commit -m "Generate snake animation for 2024"
           
           # Push to output branch
           git push origin output --force
