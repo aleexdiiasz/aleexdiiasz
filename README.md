@@ -346,7 +346,7 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
+<img width="100%" src="https://github-readme-activity-graph-wheat.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
 
 </div>
 
