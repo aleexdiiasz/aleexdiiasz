@@ -2,7 +2,6 @@ name: Generate Snake
 
 on:
   schedule:
-    # Corre a las 00:00 y 12:00 UTC
     - cron: "0 0,12 * * *"
   workflow_dispatch:
 
@@ -14,32 +13,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      # Usamos v2 que sí acepta el parámetro "years" de forma nativa sin romper el script
       - uses: Platane/snk@v2
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          years: 2024
 
       - name: Push to output branch
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          
-          # Ir a la rama de salida
           git checkout --orphan output 2>/dev/null || git checkout output
-          
-          # Limpiar y agregar el nuevo dist generado
           git rm -rf . --quiet 2>/dev/null || true
           git add dist/
-          
-          # Hacer el commit si hay cambios
-          git diff --cached --quiet || git commit -m "Generate snake animation for 2024"
-          
-          # Forzar la subida a la rama output
+          git diff --cached --quiet || git commit -m "Generate snake animation"
           git push origin output --force
