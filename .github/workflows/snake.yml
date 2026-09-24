@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    # Corre a las 00:00 y 12:00 UTC
+    # Runs at 0 and 12 UTC
     - cron: "0 0,12 * * *"
   workflow_dispatch:
 
@@ -17,28 +17,30 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Creamos la carpeta de salida manualmente
-      - name: Create dist directory
-        run: mkdir -p dist
-
-      # Descargamos directamente el renderizado de la serpiente congelado en el año 2024
-      - name: Generate 2024 Snake SVG
-        run: |
-          curl -s "https://github.io{{ github.repository_owner }}&year=2024" -o dist/github-contribution-grid-snake.svg
-          curl -s "https://github.io{{ github.repository_owner }}&year=2024&palette=github-dark" -o dist/github-contribution-grid-snake-dark.svg
+      # Usamos la acción oficial pero pasándole los argumentos nativos para forzar el año 2024
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          # Forzamos a la herramienta interna a consultar solo el año 2024
+          args: --start 2024-01-01 --end 2024-12-31
 
       - name: Push to output branch
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@://github.com"
           git config --global user.name "github-actions[bot]"
           
-          # Ir a la rama de salida
+          # Create or checkout output branch
           git checkout --orphan output 2>/dev/null || git checkout output
           
-          # Limpiar archivos viejos y añadir las nuevas imágenes congeladas de 2024
+          # Remove all files and add only dist
           git rm -rf . --quiet 2>/dev/null || true
           git add dist/
           
-          # Guardar y subir
-          git diff --cached --quiet || git commit -m "Generate snake animation for year 2024"
+          # Commit if there are changes
+          git diff --cached --quiet || git commit -m "Generate snake animation for 2024"
+          
+          # Push to output branch
           git push origin output --force
