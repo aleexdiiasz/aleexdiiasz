@@ -8,7 +8,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Cambiado a ubuntu-24.04 para evitar advertencias de migración a Ubuntu 26
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
@@ -20,7 +21,7 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          years: 2024
+          # ❌ Se eliminó la línea "years: 2024" porque ya no es un parámetro válido
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
