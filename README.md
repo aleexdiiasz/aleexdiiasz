@@ -332,14 +332,16 @@ Development and supervision of enterprise applications, document management syst
 
 ---
 
-## GitHub Trophies
+## GitHub Milestones & Achievements
 
 <div align="center">
 
-<!-- Espejo activo de Trophies administrado por la comunidad -->
-<img width="100%" src="https://vercel.app" alt="GitHub Trophies" />
+![Commits](https://shields.io)
+![Stars](https://shields.io)
+![Followers](https://shields.io)
 
 </div>
+
 
 ---
 
