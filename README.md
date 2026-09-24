@@ -320,28 +320,25 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="49%" src="https://github-stats-extended.vercel.app/api?username=aleexdiiasz&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8B5CF6&text_color=C4B5FD&ring_color=7C3AED&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=aleexdiiasz&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8B5CF6&text_color=C4B5FD&ring_color=7C3AED&include_all_commits=true&count_private=true" alt="GitHub Stats" />
 
 <img width="49%" src="https://streak-stats.demolab.com?user=aleexdiiasz&hide_border=true&background=0D1117&ring=7C3AED&fire=A78BFA&currStreakLabel=C4B5FD&sideLabels=C4B5FD&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub Streak" />
 
 <br />
 
-<img width="55%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=aleexdiiasz&layout=compact&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C4B5FD&langs_count=10" alt="Top Languages" />
+<img width="55%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aleexdiiasz&layout=compact&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C4B5FD&langs_count=10" alt="Top Languages" />
 
 </div>
 
 ---
 
-## GitHub Milestones & Achievements
+## GitHub Trophies
 
 <div align="center">
 
-![Commits](https://shields.io)
-![Stars](https://shields.io)
-![Followers](https://shields.io)
+<img width="100%" src="https://github-profile-trophy.vercel.app/?username=aleexdiiasz&theme=discord&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="GitHub Trophies" />
 
 </div>
-
 
 ---
 
@@ -349,11 +346,9 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<!-- Instancia corregida y optimizada del gráfico de actividad -->
-<img width="100%" src="https://shion.dev" alt="Contribution Activity Graph" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
 
 </div>
-
 
 ---
 
