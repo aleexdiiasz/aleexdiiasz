@@ -2,13 +2,13 @@ name: Generate Snake
 
 on:
   schedule:
-    # Runs at 0 and 12 UTC
+    # Corre a las 00:00 y 12:00 UTC
     - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -17,30 +17,29 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Usamos la acción oficial pero pasándole los argumentos nativos para forzar el año 2024
-      - uses: Platane/snk@v3
+      # Usamos v2 que sí acepta el parámetro "years" de forma nativa sin romper el script
+      - uses: Platane/snk@v2
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          # Forzamos a la herramienta interna a consultar solo el año 2024
-          args: --start 2024-01-01 --end 2024-12-31
+          years: 2024
 
       - name: Push to output branch
         run: |
-          git config --global user.email "github-actions[bot]@://github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           
-          # Create or checkout output branch
+          # Ir a la rama de salida
           git checkout --orphan output 2>/dev/null || git checkout output
           
-          # Remove all files and add only dist
+          # Limpiar y agregar el nuevo dist generado
           git rm -rf . --quiet 2>/dev/null || true
           git add dist/
           
-          # Commit if there are changes
+          # Hacer el commit si hay cambios
           git diff --cached --quiet || git commit -m "Generate snake animation for 2024"
           
-          # Push to output branch
+          # Forzar la subida a la rama output
           git push origin output --force
