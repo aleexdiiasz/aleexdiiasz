@@ -336,7 +336,8 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=aleexdiiasz&theme=discord&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="GitHub Trophies" />
+<!-- Espejo activo de Trophies administrado por la comunidad -->
+<img width="100%" src="https://vercel.app" alt="GitHub Trophies" />
 
 </div>
 
@@ -346,9 +347,11 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
+<!-- Instancia corregida y optimizada del gráfico de actividad -->
+<img width="100%" src="https://shion.dev" alt="Contribution Activity Graph" />
 
 </div>
+
 
 ---
 
