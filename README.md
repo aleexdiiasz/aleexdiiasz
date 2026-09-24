@@ -348,16 +348,6 @@ Development and supervision of enterprise applications, document management syst
 
 ---
 
-## Profile
-
-<div align="center">
-
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aleexdiiasz&theme=github_dark" alt="Profile Details" />
-
-</div>
-
----
-
 ## Contribution Snake
 
 <div align="center">
