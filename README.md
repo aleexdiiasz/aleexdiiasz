@@ -338,21 +338,21 @@ Development and supervision of enterprise applications, document management syst
 
 ---
 
-## GitHub Trophies
-
-<div align="center">
-
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=aleexdiiasz&theme=discord&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="GitHub Trophies" />
-
-</div>
-
----
-
 ## Contribution Activity
 
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph-wheat.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
+
+</div>
+
+---
+
+## 3D Contribution Graph
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/aleexdiiasz/aleexdiiasz/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
 
 </div>
 
@@ -406,6 +406,16 @@ open_to:
 
 ---
 
+## Random Dev Quote
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+
+</div>
+
+---
+
 ## Connect
 
 <div align="center">
@@ -432,7 +442,7 @@ open_to:
 
 <div align="center">
 
-### “Great software transforms complex business problems into simple, reliable experiences.”
+### "Great software transforms complex business problems into simple, reliable experiences."
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:312e81,45:6d28d9,100:7c3aed" alt="Footer" />
 
