@@ -348,11 +348,11 @@ Development and supervision of enterprise applications, document management syst
 
 ---
 
-## 3D Contribution Graph
+## Profile
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/aleexdiiasz/aleexdiiasz/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aleexdiiasz&theme=github_dark" alt="Profile Details" />
 
 </div>
 
