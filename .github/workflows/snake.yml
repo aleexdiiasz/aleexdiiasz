@@ -2,31 +2,43 @@ name: Generate Snake
 
 on:
   schedule:
+    # Runs at 0 and 12 UTC
     - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: Platane/snk@v2
+      - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Ajustamos los outputs para filtrar exactamente el rango de fechas del año 2024
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?from=2024-01-01&to=2024-12-31
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&from=2024-01-01&to=2024-12-31
 
       - name: Push to output branch
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@://github.com"
           git config --global user.name "github-actions[bot]"
+          
+          # Create or checkout output branch
           git checkout --orphan output 2>/dev/null || git checkout output
+          
+          # Remove all files and add only dist
           git rm -rf . --quiet 2>/dev/null || true
           git add dist/
-          git diff --cached --quiet || git commit -m "Generate snake animation"
+          
+          # Commit if there are changes
+          git diff --cached --quiet || git commit -m "Generate snake animation for 2024"
+          
+          # Push to output branch
           git push origin output --force
