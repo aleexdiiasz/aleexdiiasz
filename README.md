@@ -1,10 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:312e81,45:6d28d9,100:7c3aed&text=Alejandro%20D%C3%ADaz%20Silva&fontColor=ffffff&fontSize=46&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Software%20Engineer&descAlignY=58&descSize=19&animation=fadeIn" alt="Header" />
+<img width="100%" src="./header.svg" alt="Header" />
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=900&lines=Building+scalable+enterprise+software;ASP.NET+Core+%7C+React+%7C+Laravel+%7C+AWS;SaaS+Multi-Tenant+Architecture;Backend+Engineering+%7C+Cloud+%7C+Automation;Turning+business+problems+into+reliable+products" alt="Typing SVG" />
-</a>
+<img src="./typing.svg" width="900" alt="Typing SVG" />
 
 <br />
 
@@ -320,19 +318,7 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aleexdiiasz&theme=github_dark" alt="GitHub Stats" />
-
-<img width="49%" src="https://streak-stats.demolab.com?user=aleexdiiasz&hide_border=true&background=0D1117&ring=7C3AED&fire=A78BFA&currStreakLabel=C4B5FD&sideLabels=C4B5FD&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub Streak" />
-
-<br />
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aleexdiiasz&theme=github_dark" alt="Top Languages" />
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aleexdiiasz&theme=github_dark" alt="Most Commit Language" />
-
-<br />
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=aleexdiiasz&theme=github_dark&utcOffset=-6" alt="Productive Time" />
+<img width="100%" src="./stats.svg" alt="GitHub Stats" />
 
 </div>
 
@@ -342,7 +328,7 @@ Development and supervision of enterprise applications, document management syst
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph-wheat.vercel.app/graph?username=aleexdiiasz&bg_color=0D1117&color=C4B5FD&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=true&custom_title=Alejandro%27s%20Contribution%20Graph" alt="Contribution Activity Graph" />
+<img width="100%" src="./contrib-heatmap.svg" alt="Contribution Activity" />
 
 </div>
 
@@ -394,15 +380,6 @@ open_to:
   - Open-source collaboration
 ```
 
----
-
-## Random Dev Quote
-
-<div align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
-
-</div>
 
 ---
 
@@ -434,6 +411,6 @@ open_to:
 
 ### "Great software transforms complex business problems into simple, reliable experiences."
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:312e81,45:6d28d9,100:7c3aed" alt="Footer" />
+<img width="100%" src="./footer.svg" alt="Footer" />
 
 </div>
